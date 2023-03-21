@@ -1,0 +1,60 @@
+img,
+img.img-responsive {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+body,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+ol,
+ul,
+p {
+  margin: 0;
+}
+*:focus {
+  outline: none;
+}
+[type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+  -webkit-appearance: none;
+}
+.clearfix {
+  &::before,
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+  &:hover {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}
+a:hover {
+  text-decoration: none;
+}
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}

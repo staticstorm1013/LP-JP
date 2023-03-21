@@ -1,0 +1,57 @@
+body {
+  font-size: 16px;
+  font-family: 'Noto Sans JP';
+  color: $c-black;
+}
+
+.container {
+  margin: 0 187px;
+  @include lg {
+    margin: 0 12px;
+  }
+}
+.container-full-right {
+  margin: 0;
+  margin-left: 187px;
+  @include lg {
+    margin: 12px;
+  }
+}
+ul {
+  padding-left: 20px;
+}
+
+/*Color*/
+.txt-white {
+  color: $c-white;
+}
+.txt-primary {
+  color: $c-primary;
+}
+.txt-secondary {
+  color: $c-secondary;
+}
+
+/*Text size*/
+.title {
+  font-weight: 700;
+}
+h2 {
+  font-size: 32px;
+  line-height: 58px;
+}
+h3 {
+  font-size: 20px;
+  line-height: 32px;
+}
+.txt-lg {
+  font-size: 32px;
+  line-height: 58px;
+}
+.txt-md {
+  font-size: 20px;
+  line-height: 32px;
+}
+.fw-md {
+  font-weight: 500;
+}

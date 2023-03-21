@@ -1,0 +1,24 @@
+@mixin lg {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media only screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin flex-col-gap ($gap) {
+  display: flex;
+  flex-direction: column;
+  row-gap: #{$gap}px;
+}
+
+@mixin background-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
