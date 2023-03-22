@@ -75,7 +75,6 @@
     .column-left {
       width: 66.66%;
       @include flex-col-gap(30);
-      justify-content: flex-end;
       @include lg {
         width: 100%;
       }

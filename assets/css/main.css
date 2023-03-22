@@ -343,9 +343,6 @@ ul.has-no-marker li {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 30px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 @media only screen and (max-width: 991px) {
