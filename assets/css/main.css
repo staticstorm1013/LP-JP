@@ -502,12 +502,20 @@ ul.has-no-marker li {
 
 .contact-card .inner-wrap .contact-info .brand-logo {
   width: 245px;
+  height: 123px;
+  padding: 20px;
+  background-color: #FFFFFF;
 }
 
 @media only screen and (max-width: 991px) {
   .contact-card .inner-wrap .contact-info .brand-logo {
     margin: 0 auto;
   }
+}
+
+.contact-card .inner-wrap .contact-info .brand-logo img {
+  height: auto;
+  width: auto;
 }
 
 .contact-card .inner-wrap .contact-info .company-info {

@@ -172,8 +172,15 @@
       }
       .brand-logo {
         width: 245px;
+        height: 123px;
+        padding: 20px;
+        background-color: $c-white;
         @include lg {
           margin: 0 auto;
+        }
+        img {
+          height: auto;
+          width: auto;
         }
       }
       .company-info {
