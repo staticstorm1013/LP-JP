@@ -1,21 +1,16 @@
 body {
   font-size: 16px;
+  line-height: 1.5em;
   font-family: 'Noto Sans JP';
   color: $c-black;
 }
 
 .container {
-  margin: 0 187px;
-  @include lg {
-    margin: 0 12px;
-  }
-}
-.container-full-right {
-  margin: 0;
-  margin-left: 187px;
-  @include lg {
-    margin: 12px;
-  }
+  max-width: 1026px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 ul {
   padding-left: 20px;
@@ -38,19 +33,19 @@ ul {
 }
 h2 {
   font-size: 32px;
-  line-height: 58px;
+  line-height: 1.5em;
 }
 h3 {
   font-size: 20px;
-  line-height: 32px;
+  line-height: 1.5em;
 }
 .txt-lg {
   font-size: 32px;
-  line-height: 58px;
+  line-height: 1.5em;
 }
 .txt-md {
   font-size: 20px;
-  line-height: 32px;
+  line-height: 1.5em;
 }
 .fw-md {
   font-weight: 500;

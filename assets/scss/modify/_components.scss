@@ -1,8 +1,14 @@
 .page-2 {
   @include flex-col-gap(140);
+  @include sm {
+    row-gap: 80px
+  }
 }
 .featured {
   @include flex-col-gap(50);
+  @include sm {
+    row-gap: 30px;
+  }
   .title-wrap {
     position: relative;
     padding: 78px 0;
@@ -30,15 +36,15 @@
   .content-wrap {
     .inner-wrap {
       @include flex-col-gap(40);
-      .paragraph {
-        @include flex-col-gap(15);
-      }
     }
   }
 }
 
 .big-banner-content {
   @include flex-col-gap(50);
+  @include sm {
+    row-gap: 30px;
+  }
   .title-wrap {
     position: relative;
     .background-overlay {
@@ -54,7 +60,6 @@
       padding: 12px 0;
       h2 {
         font-size: 27px;
-        line-height: 1em;
       }
     }
   }
@@ -64,20 +69,23 @@
       gap: 58px;
       @include lg {
         flex-direction: column;
+        row-gap: 30px;
       }
     }
     .column-left {
-      width: 683px;
+      width: 66.66%;
       @include flex-col-gap(30);
+      justify-content: flex-end;
       @include lg {
-        max-width: 100%;;
-      }
-      .paragraph {
-        @include flex-col-gap(15);
+        width: 100%;
       }
     }
     .column-right {
       flex: 1;
+      margin-right: calc( -100vw / 2 + ( 1026px - 30px ) /2 );
+      @include lg {
+        margin-right: 0;
+      }
     }
   }
   &.single-col {
@@ -98,7 +106,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    @include lg {
+    @include sm {
       grid-template-columns: 1fr;
     }
     .card {
@@ -133,11 +141,18 @@
     border-radius: 4px;
     @include lg {
       padding: 16px 8px;
+      row-gap: 15px;
     }
     .title-wrap {
       .title {
-        // padding-bottom: ;
+        padding-bottom: 15px;
         border-bottom: 1px solid $c-primary;
+        @include lg {
+          letter-spacing: -0.5px;
+        }
+        @include sm {
+          letter-spacing: -0.6px;
+        }
         h2 {
           font-size: 20px;
         }
@@ -149,7 +164,11 @@
       gap: 50px;
       @include lg {
         padding: 0;
+        gap: 30px;
+      }
+      @include sm {
         flex-direction: column;
+        row-gap: 15px;
       }
       .brand-logo {
         width: 245px;

@@ -45,3 +45,7 @@ ul.has-no-marker {
 .icon-lung {
   background-image: url(../images/icons/icon-lung.png);
 }
+
+.paragraph {
+  @include flex-col-gap(15);
+}
